@@ -2,6 +2,7 @@
 
 **cfg_parser.py**
 - Parser created using NLTK which parses sentences using a [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar)
+- To invoke: ```python cfg_parser.py [.fcfg grammar file] [.txt sentences file] [output path]```
 - Context-free grammar (CFG) grammar file must be in proper NTLK format (one rule per line). An example:
 ```
 TOP -> MD _X_9
@@ -18,8 +19,6 @@ Will this work in humans?
 They published their research today online.
 ```
 
-
-
 **feature_parser.py**
 - Parser created using NLTK which parses sentences using a [feature grammar](https://www.nltk.org/book/ch09.html)
 - To invoke: ```python feature_parser.py [.fcfg grammar file] [.txt sentences file] [output path]```
@@ -34,9 +33,8 @@ PropN[NUM=sg] -> 'Tuesday'
 (S[] (NP[NUM='pl'] (DET[] the) (N[NUM='pl'] dogs)) (VP[NUM='pl', TENSE='pres'] (IV[NUM='pl', TENSE='pres'] bark)) (PUNC[] .))
 ```
 
-
 **cky_scratch.py**
-- A from-scratch implementation of the CKY parsing algorithm
+- A from-scratch implementation of the [CKY parsing algorithm](https://en.wikipedia.org/wiki/CYK_algorithm)
 - To invoke: ```python cky_scratch.py [.cfg grammar file] [.txt sentences file] [output path]```
 
 **cnf_converter.py**
