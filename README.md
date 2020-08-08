@@ -1,2 +1,2 @@
 # nltk_parsing
-Some various work with NLTK completed in my master's
+Some various parsing scripts with NLTK completed in my master's
